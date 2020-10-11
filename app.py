@@ -24,7 +24,7 @@ def home():
     
     out=( "The Person is "+ a )
 
-    return render_template('output1.html',prediction_text = out)
+    return render_template('output.html',prediction_text = out)
 
 if __name__ == "__main__":
     app.run(debug=True)
