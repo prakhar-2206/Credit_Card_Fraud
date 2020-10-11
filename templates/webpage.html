@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+        input[type=submit] {
+          background-color: rgb(26, 29, 29);
+          border: none;
+          color: white;
+          padding: 10px 50px;
+          text-decoration: none;
+          margin: 6px 14px;
+          cursor: pointer;
+          position: relative;
+        }
+        </style>
+        </head>
+<title>PRAKHAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body >
+<header class="w3-container w3-center w3-padding-48 w3-black">
+            <h1 class="w3-xxxlarge"><b> CREDIT CARD FRAUD DETECTOR </b></h1>
+            
+          </header>
+        
+        
+          
+
+        
+     <div style="margin-left: 140px; margin-right: 140px; background-color:lightsteelblue; border-radius: 25px;" >
+        <form class="w3-container  w3-margin " method="POST", action="{{url_for('home')}}">
+
+            <br>
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                <label class="w3-text-black "><b>LIMIT_BAL</b></label>
+                <input class="w3-input w3-border w3-light-grey  "  style="border-radius: 25px;"  type="text" ,  name='a' placeholder="Limited Balance (in New Taiwanese (NT) dollar)">
+                </div>
+                
+                    <div class="w3-half">
+                        <label for="country" class="w3-text-black "><b>EDUCATION</b></label>
+                        <select id="country" name="b" style="border-radius: 25px;" class="w3-input w3-border w3-light-grey " >
+                          <option value="1">Graduate School</option>
+                          <option value="2">University</option>
+                          <option value="3">High School</option>
+                          <option value="4">Others</option>
+                        </select>
+                        
+                    </div>
+                    
+                       
+            </div>
+            <br>
+            <div  class="w3-row-padding">
+                
+                
+                <div class="w3-half">
+                    <label for="country" class="w3-text-black "  style="border-radius: 25px;"><b>MARITAL STATUS</b></label>
+                    <select id="country" name="c" class="w3-input w3-border w3-light-grey "style="border-radius: 25px;" >
+                      <option value="1">Married</option>
+                      <option value="2">Single</option>
+                      <option value="3">Other</option>
+                    </select>
+                   
+                    
+                    </div>
+                <div class="w3-half">
+                        <label class="w3-text-black "  ><b>AGE</b></label>
+                        <input class="w3-input w3-border w3-light-grey "  style="border-radius: 25px;"type="text" ,  name='d' placeholder="Age(in yrs)">
+                        </div>
+                        
+                       
+            </div>
+
+            
+            <div class="w3-row-padding">
+                <div class="w3-col w3-container" style="width:0%"><p></p></div>
+                <div class="w3-col w3-container" style="width:100%"> <label class="w3-text-black "><b>Pay1</b></label>
+                   <select id="country" name="e" style="border-radius: 25px;" class="w3-input w3-border w3-light-grey " >
+                          <option value="-2">Account started that Month with a zero balance</option>
+                          <option value="-1">Account had a balance that was paid in full</option>
+                          <option value="0">Atleast payment of minimum 2 months paid, but entire balance was not paid </option>
+                          <option value="1">Payment Delay for 1 Month</option>
+			  <option value="2">Payment Delay for 2 Month</option>
+                          <option value="3">Payment Delay for 3 Month</option>
+                          <option value="4">Payment Delay for 4 Month</option>
+                          <option value="5">Payment Delay for 5 Month</option>
+                          <option value="6">Payment Delay for 6 Month</option>
+                          <option value="7">Payment Delay for 7 Month</option>
+                          <option value="8">Payment Delay for 8 Month</option>
+                        </select>
+                        
+                    </div>
+
+         
+
+              <div class="w3-container" id="about">
+                
+                  <h3 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Bill Amount For Past 6 Months</span></h3>
+                  
+               
+            </div>
+              
+
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                <label class="w3-text-teal "><b></b></label>
+                <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='f' style="border-radius: 25px;"placeholder="Last month bill amount">
+                </div>
+                
+                    <div class="w3-half">
+                    <label class="w3-text-teal "><b></b></label>
+                    <input class="w3-input w3-border w3-light-grey "   type="text" ,  name='g'  style="border-radius: 25px;"placeholder="Last 2nd month bill amount">
+                    </div>
+		
+                    
+            </div>
+            <br>
+            <div class="w3-row-padding">
+
+                        <div class="w3-half">
+                        <label class="w3-text-teal "><b></b></label>
+                        <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='h' style="border-radius: 25px;" placeholder="Last 3rd month bill amount">
+                        </div>
+			
+	
+                <div class="w3-half">
+                <label class="w3-text-teal "><b></b></label>
+                <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='i' style="border-radius: 25px;" placeholder="Last 4th month bill amount">
+                </div>
+                
+                   
+            
+    </div>
+
+	<br>
+        <div class="w3-row-padding">
+	
+		    <div class="w3-half">
+                    <label class="w3-text-teal "><b></b></label>
+                    <input class="w3-input w3-border w3-light-grey "   type="text" ,  name='j' style="border-radius: 25px;" placeholder="Last 5th month bill amount">
+                    </div>
+                    
+                        <div class="w3-half">
+                        <label class="w3-text-teal "><b></b></label>
+                        <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='k' style="border-radius: 25px;" placeholder="Last 6th month bill amount">
+                        </div>
+    	</div>
+           
+            <div class="w3-container" id="about">
+                <div class="w3-content" style="max-width:700px">
+                  <h3 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Paid Amount For Past 6 Months</span></h3>
+                  
+                  
+                </div>
+            </div>
+              
+            
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                <label class="w3-text-teal "><b></b></label>
+                <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='l'style="border-radius: 25px;" placeholder="Amount paid in Last month">
+                </div>
+                
+                    <div class="w3-half">
+                    <label class="w3-text-teal "><b></b></label>
+                    <input class="w3-input w3-border w3-light-grey "   type="text" ,  name='m' style="border-radius: 25px;"placeholder="Amount paid in Last 2nd month">
+                    </div>
+                    
+            </div>
+            <br>
+            <div class="w3-row-padding">
+
+
+                        <div class="w3-half">
+                        <label class="w3-text-teal "><b></b></label>
+                        <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='n'style="border-radius: 25px;" placeholder="Amount paid in Last 3rd month">
+                        </div>
+
+                <div class="w3-half">
+                <label class="w3-text-teal "><b></b></label>
+                <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='o' style="border-radius: 25px;" placeholder="Amount paid in Last 4th month">
+                </div>
+                
+	</div>
+	<br>
+
+	<div class="w3-row-padding">
+
+                    <div class="w3-half">
+                    <label class="w3-text-teal "><b></b></label>
+                    <input class="w3-input w3-border w3-light-grey "   type="text" ,  name='p' style="border-radius: 25px;"placeholder="Amount paid in Last 5th month">
+                    </div>
+                    
+                        <div class="w3-half">
+                        <label class="w3-text-teal "><b></b></label>
+                        <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='q'style="border-radius: 25px;" placeholder="Amount paid in Last 6th month">
+                        </div>
+            </div>
+            
+	<br>
+		<center>
+            <input type="submit" , value='Predict!' >
+            </center>
+	<br>
+            
+        </form>
+    </div>
+</div>
+    <footer class="w3-container w3-black w3-padding-16 w3-center">
+        <p>Made by <a href="https://www.linkedin.com/in/prakhar-agrawal22/" target="_blank">Prakhar Agrawal</a></p>
+      </footer>
+   
+
+    </body>
+</html>
